@@ -1,8 +1,11 @@
 /**
- * Package with endpoints classes, which expose access points through a web interface.
+ * Camada de Aplicação - Arquitetura DDD (Domain-Driven Design)
+ * <p>
+ * Nessa camada estão todas as classes relacionadas a interface rest e web.
+ * </p>
  *
- * @author brazona
- * @version 1.0
  * @since 1.0
+ * @author Brazona Tech
+ * @version 1.1
  */
 package br.brazona.bzn_gai_services.application.controllers;
