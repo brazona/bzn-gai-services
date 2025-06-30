@@ -1,12 +1,23 @@
 package br.brazona.bzn_gai_services.domain.exceptions;
 
-import br.brazona.bzn_gai_services.domain.constants.ExceptionConst;
-
+/**
+*
+* Exception class UserNotFoundException
+*
+* @author Brazona Tech
+* @version 1.0
+* @since 1.0
+*
+**/
 public class UserNotFoundException extends RuntimeException {
-
-    private static final long serialVersionUID = 1L;
-
-    public UserNotFoundException() {
-        super("User "+ExceptionConst.NOT_FOUND);
+    /**
+     *
+     * Method that returns the exception: UserNotFoundException.
+     *
+     * @param message Exception descriptive messages.
+     *
+     **/
+    public UserNotFoundException(String message) {
+        super(message);
     }
 }

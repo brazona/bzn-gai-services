@@ -1,8 +1,5 @@
 HELP.md
 target/
-.mvn
-mvnw
-mvnw.cmd
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
@@ -34,4 +31,13 @@ build/
 
 ### VS Code ###
 .vscode/
-/src/main/resources/log/
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+replay_pid*
+/.idea/
+target/***
+*.env
+bin/***
+*.projetc
+src/main/resources/log/***

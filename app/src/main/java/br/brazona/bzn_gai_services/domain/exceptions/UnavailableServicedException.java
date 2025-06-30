@@ -1,15 +1,23 @@
 package br.brazona.bzn_gai_services.domain.exceptions;
 
-import br.brazona.bzn_gai_services.domain.constants.ExceptionConst;
-
-import java.io.Serial;
-
+/**
+*
+* Exception class UnavailableServicedException
+*
+* @author Brazona Tech
+* @version 1.0
+* @since 1.0
+*
+**/
 public class UnavailableServicedException extends RuntimeException {
-
-    @Serial
-    private static final long serialVersionUID = 1L;
-
-    public UnavailableServicedException() {
-        super(ExceptionConst.UNAVAILABLE_SERVICE_ERROR);
+    /**
+     *
+     * Method that returns the exception: UnavailableServicedException.
+     *
+     * @param message Exception descriptive messages.
+     *
+     **/
+    public UnavailableServicedException(String message) {
+        super(message);
     }
 }
