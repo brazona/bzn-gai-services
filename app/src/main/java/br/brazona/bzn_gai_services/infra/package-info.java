@@ -1,5 +1,5 @@
 /**
- * This is the root directory of the java application.
+ * Package that contains the structure and definition classes.
  * <p>
  * The project architecture follows the DDD - Domain Driven Design concept,
  * with the purpose of building an application with a standardized structure and adopting concepts
@@ -10,4 +10,4 @@
  * @version 1.0
  * @since 1.0
  */
-package br.brazona.bzn_gai_services.infrastructure.repositories;
+package br.brazona.bzn_gai_services.infra;

@@ -1,6 +1,6 @@
-package br.brazona.bzn_gai_services.infrastructure.repositories;
+package br.brazona.bzn_gai_services.infra.repositories;
 
-import br.brazona.bzn_gai_services.infrastructure.entities.SessionEntity;
+import br.brazona.bzn_gai_services.infra.entities.SessionEntity;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;

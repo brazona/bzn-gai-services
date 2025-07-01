@@ -1,8 +1,6 @@
 package br.brazona.bzn_gai_services.application.controllers;
 
-import br.brazona.bzn_gai_services.domain.constants.ExceptionConst;
-import br.brazona.bzn_gai_services.domain.exceptions.*;
-import br.brazona.bzn_gai_services.domain.views.business.ApiErrorVO;
+
 import lombok.extern.slf4j.Slf4j;
 import org.hibernate.exception.ConstraintViolationException;
 import org.springframework.dao.DataAccessException;
@@ -16,6 +14,14 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.context.request.WebRequest;
 import org.springframework.web.method.annotation.MethodArgumentTypeMismatchException;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
+
+import br.brazona.bzn_gai_services.domain.constants.ExceptionConst;
+import br.brazona.bzn_gai_services.domain.exceptions.AccessDeniedException;
+import br.brazona.bzn_gai_services.domain.exceptions.BadRequestException;
+import br.brazona.bzn_gai_services.domain.exceptions.EmailNotSendException;
+import br.brazona.bzn_gai_services.domain.exceptions.NotFoundException;
+import br.brazona.bzn_gai_services.domain.exceptions.UserNotFoundException;
+import br.brazona.bzn_gai_services.domain.views.business.ApiErrorVO;
 
 import java.util.Objects;
 

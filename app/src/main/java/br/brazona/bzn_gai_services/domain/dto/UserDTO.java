@@ -10,7 +10,7 @@ import br.brazona.bzn_gai_services.domain.views.business.AuthUpdateRequestBusine
 import br.brazona.bzn_gai_services.domain.views.business.UpdatePassRequestBusinessVO;
 import br.brazona.bzn_gai_services.domain.views.business.UserDetailsVO;
 import br.brazona.bzn_gai_services.domain.views.business.UserRequestVO;
-import br.brazona.bzn_gai_services.infrastructure.entities.UsersEntity;
+import br.brazona.bzn_gai_services.infra.entities.UsersEntity;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

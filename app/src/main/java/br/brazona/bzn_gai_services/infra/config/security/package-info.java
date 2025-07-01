@@ -10,4 +10,4 @@
  * @version 1.0
  * @since 1.0
  */
-package br.brazona.bzn_gai_services.infrastructure.config.security;
+package br.brazona.bzn_gai_services.infra.config.security;

@@ -1,4 +1,4 @@
-package br.brazona.bzn_gai_services.infrastructure.config.security;
+package br.brazona.bzn_gai_services.infra.config.security;
 
 import br.brazona.bzn_gai_services.domain.constants.LogsConst;
 import br.brazona.bzn_gai_services.domain.constants.ServicesConst;

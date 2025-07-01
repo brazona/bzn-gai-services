@@ -1,4 +1,4 @@
-package br.brazona.bzn_gai_services.infrastructure.entities;
+package br.brazona.bzn_gai_services.infra.entities;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

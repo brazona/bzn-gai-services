@@ -23,9 +23,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 @Slf4j
 @EnableAutoConfiguration
-@EntityScan(basePackages = { "br.brazona.bzn_gai_services.infrastructure.entities" })
+@EntityScan(basePackages = { "br.brazona.bzn_gai_services.infra.entities" })
 @ComponentScan( basePackages = {"br.brazona.bzn_gai_services.*"})
-@EnableJpaRepositories(basePackages = {"br.brazona.bzn_gai_services.infrastructure.repositories"})
+@EnableJpaRepositories(basePackages = {"br.brazona.bzn_gai_services.infra.repositories"})
 @EnableTransactionManagement
 @RestController
 @EnableCaching

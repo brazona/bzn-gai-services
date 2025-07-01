@@ -1,4 +1,4 @@
-package br.brazona.bzn_gai_services.infrastructure.entities;
+package br.brazona.bzn_gai_services.infra.entities;
 
 import br.brazona.bzn_gai_services.domain.enuns.RolesEnum;
 import jakarta.persistence.Entity;

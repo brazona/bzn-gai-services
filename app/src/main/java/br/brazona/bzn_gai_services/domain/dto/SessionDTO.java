@@ -5,7 +5,7 @@ import br.brazona.bzn_gai_services.domain.exceptions.BadRequestException;
 import br.brazona.bzn_gai_services.domain.exceptions.NotFoundException;
 import br.brazona.bzn_gai_services.domain.utils.ExceptionUtil;
 import br.brazona.bzn_gai_services.domain.views.business.SessionVO;
-import br.brazona.bzn_gai_services.infrastructure.entities.SessionEntity;
+import br.brazona.bzn_gai_services.infra.entities.SessionEntity;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 /**

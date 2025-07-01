@@ -1,6 +1,6 @@
-package br.brazona.bzn_gai_services.infrastructure.repositories;
+package br.brazona.bzn_gai_services.infra.repositories;
 
-import br.brazona.bzn_gai_services.infrastructure.entities.BusinessPartnersEntity;
+import br.brazona.bzn_gai_services.infra.entities.BusinessPartnersEntity;
 import org.springframework.data.repository.CrudRepository;
 
 /**

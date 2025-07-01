@@ -1,7 +1,8 @@
-package br.brazona.bzn_gai_services.infrastructure.repositories;
+package br.brazona.bzn_gai_services.infra.repositories;
 
-import br.brazona.bzn_gai_services.infrastructure.entities.AddressesEntity;
+import br.brazona.bzn_gai_services.infra.entities.AddressesEntity;
 import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
 
 /**
 *
@@ -12,5 +13,6 @@ import org.springframework.data.repository.CrudRepository;
 * @since 1.0
 *
 **/
+@Repository
 public interface AddressesRepository extends CrudRepository<AddressesEntity, Long> {
 }

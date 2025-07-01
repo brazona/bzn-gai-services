@@ -1,4 +1,4 @@
-package br.brazona.bzn_gai_services.infrastructure.config.security;
+package br.brazona.bzn_gai_services.infra.config.security;
 
 import br.brazona.bzn_gai_services.domain.constants.LogsConst;
 import br.brazona.bzn_gai_services.domain.constants.ServicesConst;
@@ -42,12 +42,17 @@ public class CustomAuthManager implements AuthorizationManager {
             ,"/api/v1/auth/forgot"
             ,"/api/v1/auth/validate/code"
             ,"/v1/auth/validate/code"
+            ,"/gai/api-docs"
+            ,"/gai/api-docs/***"
+            
     };
     private static final String[] AUTHORIZATION = {
             "/v1/auth/update/password"
             ,"/api/v1/auth/update/password"
             ,"/api/v1/auth/authorization"
             ,"/v1/auth/authorization"
+            ,"/gai/api-docs"
+            ,"/gai/api-docs/***"
     };
     @Autowired
     private EnvUtil envUtil;
@@ -67,7 +72,9 @@ public class CustomAuthManager implements AuthorizationManager {
                 String headerAuth = object.getRequest().getHeader("Authorization");
                 String path =  object.getRequest().getRequestURI();
                 Boolean isAuthorization = ArrayUtils.contains(AUTHORIZATION, path);
-                if (headerAuth == null || headerAuth.isEmpty())
+                if (isAuthorization)
+                    return new AuthorizationDecision(true);                
+                else if (headerAuth == null || headerAuth.isEmpty())
                     return new AuthorizationDecision(false);
                 else if (StringUtils.hasText(headerAuth) && headerAuth.startsWith("Bearer ")){
                     return authorizationBearer(headerAuth, isAuthorization);
