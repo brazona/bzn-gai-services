@@ -1,1 +1,0 @@
-INSERT INTO public.profiles (id, name, user_id, role_id) VALUES (1,'COORDENADOR', 1, 1);
