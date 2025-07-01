@@ -9,10 +9,10 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>br.brazona</groupId>
-	<artifactId>bzn-exemplo-services-roles</artifactId>
+	<artifactId>bzn-gai-services-role</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>bzn-exemplo-services-roles</name>
-	<description>Aplicação exemplo de serviços / microsserviços Roles</description>
+	<name>bzn-gai-services-role</name>
+	<description>Fornece informações sobre o papeis de usuários do sistema</description>
 
 	<url />
 	<licenses>

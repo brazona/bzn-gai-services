@@ -9,10 +9,10 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>br.brazona</groupId>
-	<artifactId>bzn-exemplo-services-profiles</artifactId>
+	<artifactId>bzn-gai-services-user</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>bzn-exemplo-services-profiles</name>
-	<description>Aplicação exemplo de serviços / microsserviços Roles</description>
+	<name>bzn-gai-services-user</name>
+	<description>Fornece informações dos usuários dos sistemas</description>
 
 	<url />
 	<licenses>
