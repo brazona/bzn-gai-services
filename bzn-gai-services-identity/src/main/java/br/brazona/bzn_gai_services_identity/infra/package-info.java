@@ -2,7 +2,7 @@
 /**
  * Camada de InfraEstrutura - Arquitetura DDD (Domain-Driven Design)
  * <p>
- * Nessa camada estão todas as classes relacionadas a configurações e acesso ao banco de dados.
+ * Nessa camada estão todas as classes relacionadas aos dados de configuração da aplicação, como por exemplo, acesso ao banco de dados, serviços externos, e outras configurações necessárias para o funcionamento da aplicação.
  * </p>
  *
  * @since 1.0
