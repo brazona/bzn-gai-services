@@ -11,7 +11,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 @Entity
-@Table(name = "credentiasl")
+@Table(name = "credentials")
 @Getter
 @Setter
 public class CredentialsEntity implements Serializable{
