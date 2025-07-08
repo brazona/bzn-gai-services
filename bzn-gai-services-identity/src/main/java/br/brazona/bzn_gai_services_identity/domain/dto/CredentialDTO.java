@@ -6,6 +6,16 @@ import br.brazona.bzn_gai_services_identity.domain.models.CredentialReqModel;
 import br.brazona.bzn_gai_services_identity.domain.models.CredentialRespModel;
 import br.brazona.bzn_gai_services_identity.infra.entities.CredentialsEntity;
 
+/**
+* 
+* Classe que transforma dados de credenciais.
+* 
+* @author Brazona Tech
+* @version 1.0
+* @since 1.0
+*
+**/
+
 @Component
 public class CredentialDTO {
 
