@@ -10,4 +10,4 @@
  * @version 1.1
  */
 
-package br.brazona.bzn_gai_services_identity.app.impl;
+package br.brazona.bzn_gai_services_identity.app.controllers.impl;

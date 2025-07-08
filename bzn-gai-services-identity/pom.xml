@@ -9,9 +9,9 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>br.brazona</groupId>
-	<artifactId>bzn-gai-services-user</artifactId>
+	<artifactId>bzn-gai-services-identity</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>bzn-gai-services-user</name>
+	<name>bzn-gai-services-identity</name>
 	<description>Micro-serviço que fornece para o aplicativo GAI as funcionalidades dos usuários das aplicações, esse recurso fornece os dados e informações dos usuários.</description>
 	<url/>
 	<licenses>
