@@ -1,0 +1,5 @@
+package br.brazona.bzn_gai_services_identity.domain.services;
+
+public interface CredentialService {
+
+}

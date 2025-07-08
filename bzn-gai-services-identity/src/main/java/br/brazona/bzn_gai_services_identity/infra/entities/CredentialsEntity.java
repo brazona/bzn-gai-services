@@ -7,6 +7,7 @@ import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -24,6 +25,7 @@ import lombok.Setter;
 @Table(name = "credentials")
 @Getter
 @Setter
+@AllArgsConstructor
 public class CredentialsEntity implements Serializable{
 
 	@Serial
@@ -31,8 +33,7 @@ public class CredentialsEntity implements Serializable{
 	
     @Id
     private Long id;
-    private String name;
-    private String email;
+    private String username;
     private String password;
     private Boolean isAccountNonExpired;
     private Boolean isAccountNonLocked;
