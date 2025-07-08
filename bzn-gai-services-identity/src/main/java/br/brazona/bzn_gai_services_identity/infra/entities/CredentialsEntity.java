@@ -10,6 +10,16 @@ import jakarta.persistence.Table;
 import lombok.Getter;
 import lombok.Setter;
 
+/**
+* 
+* Classe que representa a Entidade Credencial.
+* 
+* @author Brazona Tech
+* @version 1.0
+* @since 1.0
+*
+**/
+
 @Entity
 @Table(name = "credentials")
 @Getter
