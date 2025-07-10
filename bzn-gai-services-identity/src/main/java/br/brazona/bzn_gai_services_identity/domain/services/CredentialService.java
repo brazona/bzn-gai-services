@@ -2,8 +2,8 @@ package br.brazona.bzn_gai_services_identity.domain.services;
 
 import java.util.List;
 
-import br.brazona.bzn_gai_services_identity.domain.models.CredentialReqModel;
-import br.brazona.bzn_gai_services_identity.domain.models.CredentialRespModel;
+import br.brazona.bzn_gai_services_identity.domain.models.CredentialModel;
+import br.brazona.bzn_gai_services_identity.domain.models.CredentialModel;
 
 /**
 * 
@@ -17,9 +17,49 @@ import br.brazona.bzn_gai_services_identity.domain.models.CredentialRespModel;
 
 public interface CredentialService {
 
-	Void create(CredentialReqModel credentialRequest);
-	CredentialRespModel readByUsername(String username);
-	Void update(CredentialReqModel credentialRequest);
-	Void delete(String username);
-	List<CredentialRespModel>list();
+	/**
+    *
+    * Método que cria uma credencial de acesso aos sistemas.
+    *
+    * @param credentialModel, objeto que representa uma credencial.
+    *
+    **/
+	public void create(CredentialModel credentialModel);
+	
+	/**
+    *
+    * Método que consulta uma credencial de acesso aos sistemas pelo nome do usuário.
+    *
+    * @param username, valor que representa o valor do usuário.
+    * @return CredentialModel, que representa as credenciais de um usuário.
+    *
+    **/
+	public CredentialModel readByUsername(String username);
+	
+	/**
+    *
+    * Método que atualiza uma credencial de acesso aos sistemas.
+    *
+    * @param username, valor que representa o valor do usuário.
+    *
+    **/	
+	public void update(CredentialModel credentialModel);
+	
+	/**
+    *
+    * Método que exclui (inativa) uma credencial de acesso aos sistemas.
+    *
+    * @param username, valor que representa o valor do usuário.
+    *
+    **/	
+	public void delete(String username);
+
+	/**
+    *
+    * Método que atualiza uma credencial de acesso aos sistemas.
+    *
+    * @return List<CredentialModel>, lista de credenciais de acesso.
+    *
+    **/	
+	public List<CredentialModel>list();
 }

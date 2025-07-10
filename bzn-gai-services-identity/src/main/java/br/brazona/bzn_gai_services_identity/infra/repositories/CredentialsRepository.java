@@ -19,10 +19,10 @@ public interface CredentialsRepository extends CrudRepository <CredentialsEntity
 
     /**
     *
-    * Method that queries the user record by name.
+    * Método que consulta uma credencial através do nome do usuário.
     *
-    * @param username, name that user.
-    * @return UsersEntity, Class Entity Users.
+    * @param username, nome do usuário.
+    * @return CredentialsEntity, que representa as credenciais de um usuário.
     *
     **/
    @Query("SELECT u FROM CredentialsEntity u WHERE u.username =?1")

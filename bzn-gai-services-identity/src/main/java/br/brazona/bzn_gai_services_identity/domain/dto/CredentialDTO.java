@@ -2,8 +2,8 @@ package br.brazona.bzn_gai_services_identity.domain.dto;
 
 import org.springframework.stereotype.Component;
 
-import br.brazona.bzn_gai_services_identity.domain.models.CredentialReqModel;
-import br.brazona.bzn_gai_services_identity.domain.models.CredentialRespModel;
+import br.brazona.bzn_gai_services_identity.domain.models.CredentialModel;
+import br.brazona.bzn_gai_services_identity.domain.models.TokenModel;
 import br.brazona.bzn_gai_services_identity.infra.entities.CredentialsEntity;
 
 /**
@@ -19,10 +19,13 @@ import br.brazona.bzn_gai_services_identity.infra.entities.CredentialsEntity;
 @Component
 public class CredentialDTO {
 
-	public CredentialsEntity toEntity(CredentialReqModel model) {
+	public CredentialsEntity toEntity(CredentialModel model) {
 		return new CredentialsEntity(null, model.getUsername(), model.getPassword(), true, true, true, true, true);
 	}
-	public CredentialRespModel toModelResp(String token) {
-		return new CredentialRespModel(token);
+	public CredentialModel toModel(CredentialsEntity entity) {
+		return new CredentialModel(entity.getUsername(), entity.getPassword());
+	}
+	public TokenModel toToken(String token) {
+		return new TokenModel(token);
 	}
 }

@@ -2,14 +2,12 @@ package br.brazona.bzn_gai_services_identity.domain.models;
 
 import org.springframework.stereotype.Component;
 
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 
-
 /**
 * 
-* Classe que representa o modelo de resposta dos dados de credenciais.
+* Classe que representa o modelo de requisicao dos dados de credenciais.
 * 
 * @author Brazona Tech
 * @version 1.0
@@ -19,8 +17,9 @@ import lombok.Setter;
 
 @Component
 @Getter
-@AllArgsConstructor
-public class CredentialRespModel {
+@Setter
+public class CredentialModel {
 
-	private String access_token;
+	private String username;
+	private String password;
 }
