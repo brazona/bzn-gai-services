@@ -1,9 +1,9 @@
-package br.brazona.bzn_gai_services_identity.domain.services;
+package br.brazona.bzn_gai_services_access.domain.services;
 
 import java.util.List;
 
-import br.brazona.bzn_gai_services_identity.domain.models.CredentialReqModel;
-import br.brazona.bzn_gai_services_identity.domain.models.CredentialRespModel;
+import br.brazona.bzn_gai_services_access.domain.models.CredentialReqModel;
+import br.brazona.bzn_gai_services_access.domain.models.CredentialRespModel;
 
 /**
 * 

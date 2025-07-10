@@ -1,8 +1,8 @@
-package br.brazona.bzn_gai_services_identity.infra.repositories;
+package br.brazona.bzn_gai_services_access.infra.repositories;
 
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
-import br.brazona.bzn_gai_services_identity.infra.entities.CredentialsEntity;
+import br.brazona.bzn_gai_services_access.infra.entities.CredentialsEntity;
 
 /**
 *
